@@ -659,7 +659,7 @@ PICS = (PICS.replace("'", '').replace('"', '').replace('[', '').replace(']', '')
 
 SERVER_PORT = environ.get('SERVER_PORT', '')
 if len(SERVER_PORT) == 0:
-    SERVER_PORT = 80
+    SERVER_PORT = None
 else:
     SERVER_PORT = int(SERVER_PORT)
 
